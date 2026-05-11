@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>One Line</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="blur blur-1"></div>
+<div class="blur blur-2"></div>
+
+<div class="grain"></div>
+
+<div class="container fade-in">
+
+    <div class="logo">
+        ONE LINE
+    </div>
+
+    <h1>
+        leave one line behind.
+    </h1>
+
+    <form method="POST">
+
+        <textarea
+            id="lineInput"
+            name="line"
+            maxlength="180"
+            placeholder="write something you never said..."
+            required
+        ></textarea>
+
+        <div class="bottom-row">
+
+            <span id="counter">
+                0 / 180
+            </span>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </div>
+
+    </form>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="flash-message">
+                {{ messages[0] }}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

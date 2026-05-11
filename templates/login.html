@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Login</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+    <div class="logo">
+        ADMIN
+    </div>
+
+    <form method="POST">
+
+        <textarea
+            name="password"
+            placeholder="password"
+            style="height:70px;"
+            required
+        ></textarea>
+
+        <div class="bottom-row">
+
+            <div></div>
+
+            <button type="submit">
+                Enter
+            </button>
+
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
