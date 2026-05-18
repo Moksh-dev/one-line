@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 app.secret_key = "supersecretkey"
 
-ADMIN_PASSWORD = "mokshadmin"
+ADMIN_PASSWORD = ".."
 
 # ---------------- DATABASE ----------------
 
