@@ -6,7 +6,7 @@ a quiet anonymous space where strangers leave one sentence behind.
 
 <br>
 
-[Live Website][(https://mokeedeveloper.pythonanywhere.com)](https://mokee0717.pythonanywhere.com/)
+[Live Website](https://mokee0717.pythonanywhere.com/)
 
 </div>
 
